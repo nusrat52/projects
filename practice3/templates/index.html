@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container">
+  <section class="section">
+      <div class="">
+          {% for loan in loans %}
+          {% if loan.id % 2 != 0 %}
+              <div class="content d-flex justify-content-between pb-5">
+                <div class="content-info">
+                  <h1 class="content-header">{{loan.title}}</h1>
+                  <p class="content-txt">{{loan.description}}</p>
+        
+                  <button class="btn_2">Müraciət et ></button>
+                  <a class="content-link" href="#">Daha Etrafli</a>
+                </div>
+
+                <div class="content-img">
+                  <img style="position: absolute;right: 0px;top: -35px;" src="{{loan.img}}" alt="">
+                </div>
+              </div> 
+             {%else%}
+                <div class="content d-flex justify-content-between" style="background-color: #fafafa;">
+                  <div class="content-img">
+                    <img style="position: absolute;left: 0px;top: -35px;" src="{{loan.img}}" alt="">
+                  </div>
+                  
+                  <div class="content-info">
+                    <h1 class="content-header">{{loan.title}}</h1>
+                    <p class="content-txt">{{loan.description}}</p>
+          
+                    <button class="btn">Müraciət et ></button>
+                    <a class="content-link" href="#">Daha Etrafli</a>
+                  </div>
+                </div>
+                {% endif %}
+        {%endfor%}
+        
+
+           
+      </div>
+
+  </section>  
+</div>
+{% endblock %}
+  

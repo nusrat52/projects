@@ -1,0 +1,660 @@
+body{
+    overflow-x: hidden;
+}
+#xett-bagla{
+    cursor: pointer;
+}
+#gorsen{
+    visibility: hidden;
+    /* display: none; */
+    position: fixed;
+    z-index: 101;
+    transition: 0.3s; 
+    right: 30px;
+    width: 0px; 
+    height: 0px; 
+    background-color: rgb(233, 238, 244);
+    bottom: 50px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow:0px 0px 30px 0 rgba(0,0,0,.24) !important;
+}
+.gorsen-basliq{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    background-color: white ;
+
+}
+.gorsen-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 101;
+}
+.gorsen-icon{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 30px;
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.gorsen-icon1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(255, 107, 0) ;
+    position: absolute;
+    top: 55px;
+}
+#cat{
+    border-radius: 10px;
+    margin-top: 15px;
+    border: 0px;
+    font-family: inherit;
+    width: 90%;
+    max-width: 320px;
+    flex-shrink: 0;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    background-color: rgb(255, 107, 0);
+}
+
+.button1{
+    cursor: pointer;
+    background-color: white;
+    font-family: source sans pro,Arial;
+    font-weight: 400;
+    font-size: 24px;
+    color: #a6adb2;
+    line-height: 33px;
+    text-decoration: none;
+    margin-right: 30px;
+    display: inline-block;
+    padding-bottom: 6px;
+    border: none;
+    outline: none !important;
+
+}
+
+.albalicard__btns{
+    display: flex;
+    align-items: center;
+    
+}
+
+
+#sifaris{
+    border: 0;
+    margin-right: 15px;
+    padding: 10px;
+    align-items: center;
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    color: #f8b200; 
+    outline: none !important;
+}
+
+
+#kreditdiv{
+    display: none;
+}
+#digerdiv{
+    display: none ;
+}
+
+#sifaris2{
+    border: 0;
+    margin-right: 15px;
+    padding: 10px;
+    align-items: center;
+    width: 100px; 
+    height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #ff6b00;
+    color: white; 
+    outline: none !important;
+}
+
+.diger_btns{
+    display: flex;
+    align-items: center;
+}
+
+.albalicard__img{
+    width: 402px; 
+    height: 255px; 
+    border-radius: 15px;
+}
+
+.albalicard__text1{
+    color: white;     
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.albalicard__desc{
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 45px; 
+    color: white;
+}
+
+.etrafli_btns{
+    color: white;
+}
+.debetdiv{
+    background-color: #4c0644; 
+    border-radius: 10px 10px 0 0; 
+    padding: 55px 65px !important;
+}
+
+
+.ustunluk_line{
+    width: 100%;
+    text-align: center; 
+    border-bottom: 1px solid rgba(255,255,255,.25); 
+    line-height: 0.1em;
+    margin: 50px 0 20px; 
+
+}
+.ustunluk_text{
+    background:#4c0644; 
+    padding:0 10px; 
+    color: rgba(255,255,255,.25);  
+}
+
+.fa-5x{
+    color: #f7b200;
+}
+
+.icons-texts{
+    margin-top: 30px; 
+    font-weight: 400px; 
+    font-size: 24px ; 
+    color: #f7b200;
+}
+#btn1{
+    border-bottom: 2px solid #f7b200;
+}
+
+
+.col-12{
+    margin-bottom: 50px;
+}
+
+.kartlar_img{
+    box-shadow: -15px 15px 30px 0 rgba(0,0,0,.24) !important;
+    border-radius: 15px !important; 
+    width: 402px !important; 
+    height: 255px !important;
+}
+
+.kartlar_kart{
+    padding: 50px 50px;
+    border-radius: 10px;
+    background: #fafafa;
+    margin-top: 30px;
+}
+.card_name{
+    padding-bottom:20px ;    
+    font-size: 30px;
+    line-height: 38px;
+    color: #5a6771;
+}
+.card_desc{
+    font-size: 16px;
+    line-height: 25px;
+    color: #5a6771;
+    margin-bottom: 40px;
+}
+.accordion{
+    display: none;
+}
+.accordion-button-2{
+    width: 100% !important;
+    text-align: left;
+    color: #5a6771 !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    background-color: white !important;
+    border-bottom:1px solid #f7b200 !important ;
+}
+.accordion-inline{
+    color: #a6adb2;
+    text-decoration: none;
+    padding-top: 15px;
+    margin-left: 19px !important;
+    padding-bottom:15px;
+
+}
+.accordion-inline:hover{
+    color: #a6adb2;
+}
+.accordion-1{
+    border-bottom: 1px solid #a6adb2;
+    padding-bottom:15px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+.accordion-2{
+    cursor: pointer;
+}
+
+.valyuta-cols{
+    padding: 0 62px;
+}
+
+
+.calculator-header{
+    line-height: 24px;
+    font-family: source sans pro,Arial !important;
+    font-weight: 400;
+    font-size: 24px;
+    color: #5a6771;
+    height: 60px;
+    padding-bottom: 34px;
+}
+.calculator-text{
+    font-weight: 200;
+    color: #5a6771;
+    font-family: source sans pro,Arial !important;
+    padding-bottom: 57px;
+    height: 73px;
+}
+
+.table{
+    width: 100%;
+}
+.tableth{
+    width: 33% !important;
+}
+.tablehead{
+    height: 50px;
+    width: 100% !important;
+    /* display: table-header-group;
+    vertical-align: middle;
+    border-color: inherit; */
+    font-family: source sans pro,Arial;
+    font-weight: 200;
+    font-size: 14px;
+    color: #acb3b8;
+    line-height: 18px;
+    text-align: left;
+    border-bottom: 1px solid #d6d9db;
+    
+
+}
+.tablebody{
+    height: 50px;
+    border: none;
+    width: 100% !important;
+    /* display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit; */
+    font-weight: 400;
+    color: #5a6771;
+    line-height: 18px;
+    font-size: 18px;
+    font-family: source sans pro,Arial;
+}
+.tablebody-last{
+    border-bottom: 1px solid #d6d9db;
+}
+
+
+/* Footer************************** */
+.footer{
+    padding: 75px 0 60px;
+}
+.footer_hisse1{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-right: 60px;
+    
+}
+.hisse1_child{
+    display: flex !important;
+    flex-direction: column !important;
+}
+.kartlar_childs{
+    line-height: 26px;
+    font-weight: 400;
+    font-family: source sans pro,Arial;
+    color: #5a6771;
+    text-decoration: none;
+}
+.kartlar_childs:hover{
+    color: #5a6771;
+}
+
+.kreditler_childs{
+    line-height: 26px;
+    font-weight: 400;
+    font-family: source sans pro,Arial;
+    color: #5a6771;
+    text-decoration: none;
+}
+
+.kreditler_childs:hover{
+    color: #5a6771;
+}
+
+.emanetler_childs{
+    line-height: 26px;
+    font-weight: 400;
+    font-family: source sans pro,Arial;
+    color: #5a6771;
+    text-decoration: none;
+}
+.emanetler_childs:hover{
+    color: #5a6771;
+}
+
+.kocurmeler_childs{
+    line-height: 26px;
+    font-weight: 400;
+    font-family: source sans pro,Arial;
+    color: #5a6771;
+    text-decoration: none;
+}
+.kocurmeler_childs:hover{
+    color: #5a6771;
+}
+.reqemsal_childs{
+    line-height: 26px;
+    font-weight: 400;
+    font-family: source sans pro,Arial;
+    color: #5a6771;
+    text-decoration: none;
+}
+.reqemsal_childs:hover{
+    color: #5a6771;
+}
+.xidmetler_childs{
+    line-height: 26px;
+    font-weight: 400;
+    font-family: source sans pro,Arial;
+    color: #5a6771;
+    text-decoration: none;
+}
+.xidmetler_childs:hover{
+    color: #5a6771;
+}
+
+
+.footer_icons{
+    display: flex;
+    padding: 50px 0 20px;
+}
+
+.footer_icons_childs1{
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #FF7733;
+}
+
+.footer_icons_childs{
+    margin-right: 12px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #a6adb2;
+}
+
+.fa-1x{
+    color: white;
+}
+.fa-apple{
+    margin-left: 7px;
+}
+.fa-android{
+    margin-left: 4px;
+}
+.fa-facebook-f{
+    margin-left: 8px;
+}
+.fa-twitter{
+    margin-left: 5px;
+}
+.fa-linkedin-in{
+    margin-left: 6px;
+}
+.fa-youtube{
+    margin-top: 2px;
+    margin-left: 4px;
+}
+.fa-instagram{
+    margin-left: 6px;
+}
+
+.footer_sonhisse{
+    display: flex;
+    justify-content: space-between;
+}
+.son_hisse_txt{
+    width: 60%;
+    height: 50px;
+}
+.son_hisse_img{
+    height: 50px;
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_logo{
+    width: 25%;
+}
+@media (min-width:771px) and (max-width:991px){
+    .nagd-hisse{
+        width: 100% !important;
+    }
+    .nagdsiz-hisse{
+        display: none;
+    }
+    .cal-hisse{
+        display: none;
+    }
+    .footer_sonhisse{
+        flex-direction: column-reverse;
+    }
+    .son_hisse_txt{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px !important;
+    }
+    .son_hisse_img{
+        width: 80%;
+        margin: auto;
+    }
+    .kateqoriyalar{
+        display: none;
+    }
+    .accordion{
+        display: block;
+    }
+    .debetdiv{
+        padding: 55px 20px;
+    }
+    .albalicard__img{
+        padding-left: 0;
+        width: 670px;
+        height: 424px;
+    }
+    .kartlar_kart{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .kartlar_img{
+        padding-left: 0;
+        width: 670px !important;
+        height: 424px !important;
+    }
+    .footer_hisse1{
+        display: none;
+    }
+} 
+
+
+/* .accordion-button:not(.collapsed)::after{
+    background-image: none;
+} */
+@media (min-width:401px) and (max-width:770px){
+    .nagd-hisse{
+        width: 100% !important;
+    }
+    .nagdsiz-hisse{
+        display: none;
+    }
+    .cal-hisse{
+        display: none;
+    }
+    .footer_sonhisse{
+        flex-direction: column-reverse;
+    }
+    .son_hisse_txt{
+        width: 100%;
+        text-align: center;
+        margin-top: 50px !important;
+    }
+    
+    .son_hisse_img{
+        width: 80%;
+        margin: auto;
+    }
+    .kateqoriyalar{
+        display: none;
+    }
+    .accordion{
+        display: block;
+    }
+    .debetdiv{
+        padding: 55px 20px;
+    }
+    .albalicard__img{
+        padding-left: 0;
+        width: 100% !important;
+        /* height: 424px; */
+    }
+    .kartlar_kart{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .kartlar_img{
+        padding-left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        /* height: 424px !important; */
+    }
+    .footer_hisse1{
+        display: none;
+    }
+} 
+@media (max-width:400px) {
+    
+    .nagd-hisse{
+        width: 100% !important;
+    }
+    .nagdsiz-hisse{
+        display: none;
+    }
+    .cal-hisse{
+        display: none;
+    }
+    .footer_logo{
+        width: 50%;
+        height: 50%;
+    }
+    .footer_sonhisse{
+        flex-direction: column-reverse;
+    }
+    .son_hisse_txt{
+        width: 100%;
+        text-align: center;
+        margin-top: 15px !important;
+    }
+    
+    .son_hisse_img{
+        width: 80%;
+        margin: auto;
+    }
+    .kateqoriyalar{
+        display: none;
+    }
+    .accordion{
+        display: block;
+    }
+    .debetdiv{
+        padding: 55px 20px;
+    }
+    .albalicard__img{
+        padding-left: 0;
+        width: 100% !important;
+        /* height: 424px; */
+    }
+    .kartlar_kart{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+    .kartlar_img{
+        padding-left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        /* height: 424px !important; */
+    }
+    .footer_hisse1{
+        display: none;
+    }
+}
+/* 
+@media screen and (max-width: 600px) {
+    div.example {
+      display: none;
+    }
+  } */
+
+  /* .accordion{
+      height: 450px;
+      width: 200px;
+}
+
+.mesaj{
+      width: 50px;
+      height: 50px;
+      background-color: white;
+      color: orange;
+      border: 1px solid black;
+      border-radius: 50%;
+} */

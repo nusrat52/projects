@@ -1,0 +1,440 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<div class="owl-carousel owl-theme">
+
+     {% for i in content %}
+    <div style="background: url('{{i['photo_b']}}');-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;" class="item  d-flex  align-items-end" > <div style="height: 58%;" class="container d-flex flex-row-reverse flex-lg-row align-items-start justify-content-lg-between {% if i['st']==1 %} justify-content-end {% else %} justify-content-between {% endif %} "><img src="{{i['photo']}}" class="imgg {% if i['st']==1 %} sticky {% endif %}"  alt="">  <div class="pad-sm  {% if i['st']==1 %} sticky-w {% endif %} d-lg-flex flex-lg-column"><h1 style="font-size: 55px;" class="text-white fw-light "> {{i['basliq']}}</h1><p class="fs-4 text-white fw-normal">{{i['description']}}</p> <div class="d-flex"> {% if i['button1'] %}  <h1 class="h1 "><span style="background: url('{{i['photo_b']}}') -20px -20px repeat; -webkit-text-fill-color: transparent;-webkit-background-clip: text; display:block;" class="span" >{{i['button1']}}  &nbsp   <i class="fas fa-angle-right"></i> &nbsp </span></h1>{% endif %}  {% if i['button2'] %} <button type="button" class="btn-hov btn btn-outline-light fw-bold mr-2 "> {{i['button2']}}</button>  {% endif %} </div></div> </div></div>
+
+
+      {% endfor %}
+
+
+
+
+
+
+<!--     
+    <div id="owl2" class="item  d-flex  align-items-end" > <div style="height: 58%;" class="w-100 d-flex flex-row-reverse flex-lg-row align-items-start justify-content-lg-center justify-content-between"><img src="{{url_for('static', filename='images/icsl1.png')}} " class="imgg"   alt="">  <div class="pad-sm d-flex flex-column"><h1 style="font-size: 55px;" class="fw-light text-white "> SMS kredit</h1><p class="fs-4 text-white fw-normal">ele indi kredit sozunu yaz, 9111 e gonder ve derhal kredit sifaris et</p> <div class="d-flex"> <h1 class="h1"><span class="span" >Muraciet et  &nbsp   <i class="fas fa-angle-right"></i> &nbsp </span></h1> </div> </div> </div></div>
+    <div id="owl3" class="item  d-flex  align-items-end" > <div style="height: 58%;" class="w-100 d-flex flex-row-reverse flex-lg-row align-items-start justify-content-lg-center justify-content-between"><img src="{{url_for('static', filename='images/icsl2.png')}} " class="imgg"   alt="">  <div class="pad-sm d-flex flex-column"><h1 style="font-size: 55px;" class="fw-light text-white "> SMS kredit</h1><p class="fs-4 text-white fw-normal">ele indi kredit sozunu yaz, 9111 e gonder ve derhal kredit sifaris et</p> <div class="d-flex"> <h1 class="h1"><span class="span" >Muraciet et  &nbsp   <i class="fas fa-angle-right"></i> &nbsp </span></h1><button type="button" class="btn-hov btn btn-outline-light fw-bold mx-2 "> Etrafli</button> </div></div></div></div> 
+    <div id="owl4" class="item  d-flex  align-items-end" > <div style="height: 58%;" class="w-100 d-flex flex-row-reverse flex-lg-row align-items-start justify-content-lg-center justify-content-between"><img src="{{url_for('static', filename='images/slic3.gif')}} " class="imgg"   alt="">  <div class="pad-sm d-flex flex-column"><h1 style="font-size: 55px;" class="fw-light text-white "> SMS kredit</h1><p class="fs-4 text-white fw-normal">ele indi kredit sozunu yaz, 9111 e gonder ve derhal kredit sifaris et</p> <div class="d-flex"> <h1 class="h1"><span class="span" >Muraciet et  &nbsp   <i class="fas fa-angle-right"></i> &nbsp </span></h1> </div> </div></div></div>
+    <div id="owl5" class="item  d-flex  align-items-end" > <div style="height: 58%;" class="w-100 d-flex flex-row-reverse flex-lg-row align-items-start justify-content-lg-center justify-content-between"><img src="{{url_for('static', filename='images/slic4.png')}} " class="imgg"   alt="">  <div class="pad-sm d-flex flex-column"><h1 style="font-size: 55px;" class="fw-light text-white "> SMS kredit</h1><p class="fs-4 text-white fw-normal">ele indi kredit sozunu yaz, 9111 e gonder ve derhal kredit sifaris et</p> <div class="d-flex"> <h1 class="h1"><span class="span" >Muraciet et  &nbsp   <i class="fas fa-angle-right"></i> &nbsp </span></h1> </div> </div></div></div> -->
+
+
+</div>
+<br><br><br>
+
+
+
+
+<div class="container d-lg-none">
+    
+    <h1 style="font-size: 24px; color: #5a6771;" >Tovsiye edilen mehsullar</h1>
+    <div class="row">
+        <div class="col-6 col-md-3">
+            <div class="card" style="width: 100%;height:100%;">
+                <img src="https://www.unibank.az/uploads/banners/1515666567nagd-kredit.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Nagd kredit</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-secondary text-dark">Etrafli</a>
+                </div>
+              </div>
+        </div>
+        <div class="col-6 col-md-3">
+            <div class="card" style="width: 100%; height:100%;">
+                <img src="https://www.unibank.az/uploads/banners/1515670245rec-ipoteka.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Muddetli Depozit</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-outline-secondary text-dark">Etrafli</a>
+                </div>
+              </div>
+        </div>
+      
+            <div class="col-6 col-md-3">
+                <div class="card" style="width: 100%;height:100%;">
+                    <img src="https://www.unibank.az/uploads/banners/1515670157rec-mikro.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">mikro kreditler</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-secondary text-dark">Etrafli</a>
+                    </div>
+                  </div>
+   
+        </div>
+    
+            <div class="col-6 col-md-3">
+                <div class="card" style="width: 100%;height:100%;">
+                    <img src="https://www.unibank.az/uploads/banners/1515668605rec-deposit.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">elave melumatlar</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-outline-secondary text-dark">Etrafli</a>
+                    </div>
+                  </div>
+            </div>
+     
+    </div>
+<h1 class="my-4" style="font-size: 22px;color: #5a6771;">Mobil elaveler</h1>
+
+<div class="d-flex justify-content-center">
+   <div style="cursor: pointer;" class="d-flex flex-column align-items-center">                 <!--   {{url_for('static', filename='js/app.js')}} -->
+       <img src="{{url_for('static', filename='images/unibank.png')}}" width="80" alt="">
+       <span style="font-size: 16px;color: #5a6771;" >Unibank</span>
+       <span style="font-size: 16px;color: #5a6771;" >mobile</span>
+   </div>
+   <div style="cursor: pointer;" class="d-flex flex-column align-items-center mx-2">
+    <img src="{{url_for('static', filename='images/unibank1.png')}}" width="75" alt="">
+    <span style="font-size: 16px;color: #5a6771;" >Unibank</span>
+    <span style="font-size: 16px;color: #5a6771;" >mobile</span>
+    <span style="font-size: 16px;color: #5a6771;" >business</span>
+</div>
+<div style="cursor: pointer;" class="d-flex flex-column align-items-center">
+    <img src="{{url_for('static', filename='images/unibank2.png')}}" width="76" alt="">
+    <span style="font-size: 16px;color: #5a6771;" >Albali plus</span>
+   
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+<div class="container-lg d-none d-lg-block">
+
+    <div class="row">
+        <div class="col border-end">
+            <div class="w-100 d-flex flex-column ">
+                <div d-flex flex-column align-items-center><p style="color: #5a6771;" class="text-center fs-4 fw-normal mb-0">Nagd kreditler</p><p style="color: #ff6b00;font-size: 100px; line-height: 90px;" class="text-center fw-lighter mt-2">18%</p><p style="color: #ff6b00;" class="text-center fs-5 fw-normal">-den baslayaraq</p></div>
+                <div class="d-flex justify-content-around mt-4"><a style="color: #ff6b00;" class="fw-normal fs-5" href="#">Sifarish et <i class="fas fa-angle-right"></i></a>  <a style="color: #5a6771;" class="fw-normal fs-5" href="#">Etrafli</a></div>
+            </div>
+        </div>
+        <div class="col border-end">
+            <div class="w-100 d-flex flex-column ">
+                <div d-flex flex-column align-items-center><p style="color: #5a6771;" class="text-center fs-4 fw-normal mb-0">Emanetler</p><p style="color: #ff6b00;font-size: 100px; line-height: 90px;" class="text-center fw-lighter mt-2">11%</p><p style="color: #ff6b00;" class="text-center fs-5 fw-normal">-dek illik gelir</p></div>
+                <div class="d-flex justify-content-around mt-4"><a style="color: #ff6b00;" class="fw-normal fs-5" href="#">Sifarish et <i class="fas fa-angle-right"></i></a>  <a style="color: #5a6771;" class="fw-normal fs-5" href="#">Etrafli</a></div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="w-100 d-flex flex-column ">
+                <div d-flex flex-column align-items-center><p style="color: #5a6771;" class="text-center fs-4 fw-normal mb-0">Plastik kartlar</p><p style="color: #ff6b00;font-size: 100px; line-height: 90px;" class="text-center fw-lighter mt-2">30%</p><p style="color: #ff6b00;" class="text-center fs-5 fw-normal">-dek cashback xidmeti</p></div>
+                <div class="d-flex justify-content-around mt-4"><a style="color: #ff6b00;" class="fw-normal fs-5" href="#">Sifarish et <i class="fas fa-angle-right"></i></a>  <a style="color: #5a6771;" class="fw-normal fs-5" href="#">Etrafli</a></div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+</div>
+<div class="d-none d-lg-block">
+<br><br><br>
+
+
+<div style="background-color:rgb(247, 244, 244) ;">
+<div class="container-lg ">
+    <br><br><br> 
+<div class="row">
+   
+  <div class="col d-flex flex-column">
+    <h1 class="bolder" style="color:#ff6b00 ;font-size: 58px;line-height: 61px;">uBank</h1>
+    <div class="my-4"><a href="#"><img src="{{url_for('static', filename='images/Screenshot from 2021-01-20 01-39-44.png')}}" width="150" alt=""></a>
+        <a href="#"><img src="{{url_for('static', filename='images/google.png')}}" width="150" alt=""></a>
+        <a href="#"><img src="{{url_for('static', filename='images/appgalery.png')}}" width="150" alt=""></a>
+    </div>
+    <p style="font-size: 20px; line-height: 25px; color: #5a6771;">uBank 24/7 bank xidmətlərinə çıxışınızı smartfonunuzda təmin edən mobil əlavədir. Ödənişlərinizi banka gəlmədən, telefonunuzda bir toxunuşla həyata keçirin! </p>
+    <div class="mt-3"><a style="color: #5a6771;font-size: 18px; line-height: 23px;" href="#">Haqqinda</a>
+         <a class="mx-3" style="color: #5a6771;font-size: 18px; line-height: 23px;" href="#">Tarifler</a>
+         <a style="color: #5a6771;font-size: 18px; line-height: 23px;" href="#">Bonus ve hediyyeler</a>
+        </div>
+  </div>
+
+  <div class="col d-flex justify-content-center"><img width="600"  src="{{url_for('static', filename='images/qosatel.png')}}" alt=""></div>
+</div>
+
+
+
+
+
+</div>
+</div>
+</div>
+<br><br><br> 
+<select class="form-select select_nu fs-3 d-lg-none d-bloxk" aria-label="Default select example">
+    
+    <option class="fs-4" value="2">Nagdsiz valyuta mezenneleri</option>
+    <option class="fs-4" value="1">Nagd valyuta mezenneleri</option>
+    <option class="fs-4" value="3">Valyuta kalkulyatoru</option>
+  </select>
+<div class="container">
+    <div class="row">
+        <div id="nagd" class="col d-none d-lg-block">
+            <div class="w-100 d-flex flex-column">
+            <h1 class="vizi" style="font-size: 24px; color: #5a6771;" >Nagd valyuta mezenneleri</h1>
+            <p style="font-size: 18px; color: #5a6771; font-weight: lighter; " >Yenilendi 19.01.2021</p>
+            <table id="reqemler" class="w-75 w_nu mb-4" style="height: 300px;"> 
+                <tr class="w-100  border-bottom"><th style="width: 33%; font-size: 14px;font-weight: lighter; ">Valyuta</th><th style="width: 33%; font-size: 14px;font-weight: lighter;">Alish</th><th style="width: 33%; font-size: 14px;font-weight: lighter;">Satish</th></tr>
+                
+               <tr class="mb-3"><td style="font-size: 18px; color:#5a6771;font-weight: lighter;">USD</td><td class="reqemler" style="font-size: 18px;color:#5a6771;">{{usd}}  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td class="reqemler" style="font-size: 18px;color:#5a6771;" >1.7025  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+               <tr><td style="font-size: 18px; color:#5a6771;font-weight: lighter;">EUR</td><td class="reqemler1" style="font-size: 18px;color:#5a6771;">{{eur}}  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td class="reqemler1" style="font-size: 18px;color:#5a6771;" >2.1005  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+               <tr><td style="font-size: 18px; color:#5a6771;font-weight: lighter;">RUB</td><td class="reqemler2" style="font-size: 18px;color:#5a6771;">{{rub}}  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td class="reqemler2" style="font-size: 18px;color:#5a6771;" >0.0237  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+               <tr class="border-bottom "><td  style="font-size: 18px; color:#5a6771;font-weight: lighter;">GBP</td><td class="reqemler3" style="font-size: 18px;color:#5a6771;">{{gbp}}  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td class="reqemler3" style="font-size: 18px;color:#5a6771;" >2.3658  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+
+
+                
+            </table>
+            <a style="color: #ff6b00;font-size: 16px;text-decoration: none;" class="mb-2" href="#">Deposit qutulari</a>
+            <a style="color: #ff6b00;font-size: 16px;text-decoration: none;" href="#">Hesablashma kassa xidmeti</a>
+
+        </div>
+        </div>
+
+        <div id="nagdsiz" class="d-block d-lg-block col">
+            <div class="w-100 d-flex flex-column">
+                <h1 class="vizi" style="font-size: 24px; color: #5a6771;" >Nagdsiz valyuta mezenneleri</h1>
+                <p style="font-size: 18px; color: #5a6771; font-weight: lighter; " >Yenilendi 19.01.2021</p>
+                <table class="w-75 w_nu mb-4" style="height: 300px;"> 
+                    <tr class="w-100  border-bottom"><th style="width: 33%; font-size: 14px;font-weight: lighter; ">Valyuta</th><th style="width: 33%; font-size: 14px;font-weight: lighter;">Alish</th><th style="width: 33%; font-size: 14px;font-weight: lighter;">Satish</th></tr>
+                    
+                   <tr class="mb-3"><td style="font-size: 18px; color:#5a6771;font-weight: lighter;"> USD</td><td style="font-size: 18px;color:#5a6771;">1.6800  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td style="font-size: 18px;color:#5a6771;" >1.7025  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+                   <tr><td style="font-size: 18px; color:#5a6771;font-weight: lighter;">EUR</td><td style="font-size: 18px;color:#5a6771;">2.0274  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td style="font-size: 18px;color:#5a6771;" >2.0953  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+                   <tr><td style="font-size: 18px; color:#5a6771;font-weight: lighter;">RUB</td><td style="font-size: 18px;color:#5a6771;">0.0221  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td style="font-size: 18px;color:#5a6771;" >0.0242  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+                   <tr class="border-bottom "><td  style="font-size: 18px; color:#5a6771;font-weight: lighter;">GBP</td><td style="font-size: 18px;color:#5a6771;">2.2709  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td><td style="font-size: 18px;color:#5a6771;" >2.3576  <i style="color:#ff6b00; font-size: 10px;" class="fas fa-chevron-down"></i></td></tr>
+    
+    
+                    
+                </table>
+                <a style="color: #ff6b00;font-size: 16px;text-decoration: none;" class="mb-2" href="#">Internet bankciliq</a>
+                <a style="color: #ff6b00;font-size: 16px;text-decoration: none;" href="#">uBank</a>
+             
+    
+            </div>
+        </div>
+        <div id="kalk" class="col d-none d-lg-block">
+
+            <div class="w-100 d-flex flex-column">
+                <h1 class="vizi" style="font-size: 24px; color: #5a6771;" >Valyuta kalkulyatoru</h1>
+                <p style="font-size: 18px; color: #5a6771; font-weight: lighter; margin-bottom:30px" >Negd mezenne esasinda hesablanir</p>
+                <div style="height:300px;" class="border-bottom mb-2">
+               <div class="W-100 row mb-4"><div class="col-7"><input id="birinput" class="border-0 w-100 fs-1 fw-lighter" placeholder="0" type="number">  </div>
+               <div class="col-5">
+                <div class="d-flex justify-content-between w-100" >
+                <select class="fs-3 fw-lighter" name="" id="stopt">
+                    <option class="gbp2" value="RUB">RUB</option>
+                    <option class="gbp2" value="GBP">GBP</option>
+                    <option class="gbp2" value="USD">USD</option>
+                    <option class="gbp2" value="EUR">EUR</option>
+                    <option class="gbp2" value="AZN">AZN</option>
+                </select> 
+                <i style="color:#5a6771; font-size: 10px;align-self: center; " class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+            </div>
+                <div class="mb-4" style="width: 100%;" id="wrapper">
+                    <em class="out"></em>
+                    <em class="inner"></em>
+                  
+                  </div>
+                  <div class="W-100 row mb-3"><div class="col-7"><input id="ikiinput" placeholder="0.0000" value="" class="border-0 w-100 fs-1 fw-lighter" type="number">  </div>
+               <div class="col-5">
+                <div class="d-flex justify-content-between w-100" >
+                <select class="fs-3 fw-lighter" name="" id="scopt">
+                    <option class="gbp" value="AZN">AZN</option> 
+                    <option class="gbp" value="RUB">RUB</option>
+                    <option class="gbp" value="GBP">GBP</option>
+                    <option class="gbp" value="USD">USD</option> 
+                    <option class="gbp" value="EUR">EUR</option>
+                </select> 
+                <i style="color:#5a6771; font-size: 10px;align-self: center; " class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+            </div>
+        </div>
+                <a style="color: #ff6b00;font-size: 16px;text-decoration: none;" class="mb-2" href="#">Internet bankciliq</a>
+                <a style="color: #ff6b00;font-size: 16px;text-decoration: none;" href="#">uBank</a>
+              
+    
+            </div>
+           
+        </div>
+    </div>
+
+
+
+</div>
+<br><br><br>
+<div style="background-color:rgb(247, 244, 244) ;">
+<div class="container" >
+    <br><br><br>
+    <div   class="w-100 d-flex justify-content-between border-bottom pb-4 mb-4">
+<h1 style="color: #5a6771; font-size: 24px;">Xeberler ve aksiyalar</h1>
+<a class="d-none d-lg-inline" style="color: #5a6771; font-size: 18px;" href="#">Butun xeberler</a>
+</div>
+
+<div class="row">
+    <div class="col-12 col-lg-4">
+        <div class="row">
+            <div class="d-lg-block d-none col-3">
+                <p style="color: #ff6b00;font-weight: lighter;">30.12.2020</p>
+            </div>
+            <div class="col-12 col-lg-9">
+                <a href="#" style="text-decoration: none;"> <h1 style="color: #5a6771; font-size: 20px;">Unicapital Azərbaycanda ilin ən yaxşı investisiya şirkəti seçilib</h1></a><br>
+                <p style="color: #5a6771; font-size: 18px;font-weight: lighter;">Böyük Britaniyanın “International Finance” jurnalının 2020-ci il üzrə araşdırmasına əsasən, «Unicapital İnvestisiya Şirkəti» ASC iki nominasiya üzrə qalib olub. </p>
+                <p class="d-block d-lg-none mb-5" style="color: #ff6b00;font-weight: lighter;">30.12.2020</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="row">
+            <div class="d-lg-block d-none col-3">
+                <p style="color: #ff6b00;font-weight: lighter;">25.12.2020</p>
+            </div>
+            <div class="col-12 col-lg-9">
+                <a href="#" style="text-decoration: none;"><h1 style="color: #5a6771; font-size: 20px;">Unibank şəhidin ailəsinə ev hədiyyə edir</h1></a><br>
+                <p style="color: #5a6771; font-size: 18px;font-weight: lighter;">Unibank torpaqlarımızın düşməndən azad olunması uğrunda canından keçmiş 21 yaşlı şəhidimiz Məmmədov Tural Taryel oğlunun ailə üzvlərini evlə təmin edəcək.  </p>
+                <p class="d-block d-lg-none mb-5" style="color: #ff6b00;font-weight: lighter;">30.12.2020</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-12 col-lg-4">
+        <div class="row">
+            <div class="d-lg-block d-none col-3">
+                <p style="color: #ff6b00;font-weight: lighter;">11.12.2020</p>
+            </div>
+            <div class="col-12 col-lg-9">
+               <a href="#" style="text-decoration: none;"> <h1 href="#" style="color: #5a6771; font-size: 20px;">Unibank hər kəs üçün endirimli onlayn kredit kampaniyası keçirir</h1></a><br>
+                <p style="color: #5a6771; font-size: 18px;font-weight: lighter;">Evinizdə, işinizdə oturaraq saniyələr ərzində onlayn kredit sifariş edin və sizə yaxın Unibank filialından dəqiqələr ərzində pulunuzu götürün. Həm səhhətinizi qoruyun, həm vaxtınıza qənaət edin, həm də 2% daha aşağı faizlə kredit götürün.  </p>
+                <p class="d-block d-lg-none mb-5" style="color: #ff6b00;font-weight: lighter;">30.12.2020</p>
+            </div>
+        </div>
+    </div>
+</div>
+    <br><br><br>
+</div>
+</div>   
+<br><br><br>
+<!--   
+<div class="container-lg border-top border-bottom">
+    <br><br>
+<table class="w-100">
+    <tr class="mb-5" style="height: 85px;">
+        <th><a class="text-decoration-none fw-normal" style="color:#5a6771;font-size: 26px;" href="#">Kartlar</a></th>
+        <th><a class="text-decoration-none fw-normal" style="color:#5a6771;font-size: 26px;" href="#">Kreditler</a></th>
+        <th><a class="text-decoration-none fw-normal" style="color:#5a6771;font-size: 26px;" href="#">Emanetler</a></th>
+        <th><a class="text-decoration-none fw-normal" style="color:#5a6771;font-size: 26px;" href="#">Kocurtmeler</a></th>
+        <th><a class="text-decoration-none fw-normal" style="color:#5a6771;font-size: 26px;" href="#">Reqemsal bankciliq</a></th>
+        <th><a class="text-decoration-none fw-normal" style="color:#5a6771;font-size: 26px;" href="#">Elave xidmetler</a></th>
+    </tr>
+
+
+    <tr>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Debet</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Nagd</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Muddetli</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Olkexarici</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">uBank</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Private banking</a></td>
+        
+
+    </tr>
+
+
+    <tr style="height: 50px;">
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Kredit</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Mikro</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Proqressiv</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Olkedaxili</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Internet bankciliq</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Hesablashma-kassa xidmeti</a></td>
+        
+
+    </tr>
+
+    <tr>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Diger</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Ipoteka</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Yigim</a></td>
+        <td></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Albali shexsi kabinet</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Deposit qutulari</a></td>
+        
+
+    </tr>
+
+    <tr style="height: 50px;">
+        <td></td>
+        <td></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Faizle evvelceden</a></td>
+        <td></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Unimiles shexsi kabinet</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Posterminal/Smart kassa</a></td>
+        
+
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Online kredit odenishi</a></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Online tecaret(E-commerce)</a></td>
+        
+
+    </tr>
+    <tr style="height: 50px;">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Online kredit muracieti</a></td>
+        <td></td>
+        
+
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td><a class="text-decoration-none fw-normal" style="color:#b9b9b9;font-size: 18px;" href="#">Albali plus mobil elavesi</a></td>
+        <td></td>
+        
+
+    </tr>
+</table>
+<br><br><br>
+
+
+
+<br><br>
+</div> -->
+
+<br>
+
+
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script> -->
+
+
+
+<!-- <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.bundle.js" ></script> -->
+
+
+
+<!-- <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.esm.js" ></script>  bunu evvelceden silmisdim   -->
+<!-- <script src="bootstrap-5.0.0-beta1-dist/js/bootstrap.js" ></script> -->
+
+
+
+
+{% endblock %}

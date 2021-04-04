@@ -1,0 +1,419 @@
+.item {
+  height: 770px;
+  width: 100%;
+  /* background-image: url('carose2.jpeg');
+    background-repeat: no-repeat; */
+}
+.item .container {
+  height: 470px;
+}
+.owl-dots {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+button:focus {
+  outline: none;
+}
+
+
+
+
+
+
+#navbarToggleExternalContent{
+  position: absolute;
+  top:0px;
+  right:0;
+  z-index: 100;
+  width: 100%;
+ 
+}
+.accordion-button{
+  background-color: #1f130b !important;
+}
+
+
+#select {
+  border:0px;
+  background: transparent;
+  color:white;
+  font-size: 22px;
+  cursor:pointer;
+  
+}
+.h1 { 
+  background-color:#fff;
+  overflow:hidden;
+  display:inline-block; 
+  padding: 14px 17px 14px 17px;
+  font-weight:bold;
+  border-radius: 5px;
+  color:transparent;
+  font-size:18px;
+  margin-right:10px !important;
+}
+
+
+
+
+
+
+
+
+
+
+.owl-prev {
+  position: absolute;
+  left: 0px;
+  bottom: 40px;
+  height: 80%;
+  width: 15%;
+}
+.owl-next {
+  position: absolute;
+  right: 0px;
+  bottom: 40px;
+  height: 100%;
+  width: 15%;
+}
+.owl-prev span {
+  opacity: 0;
+}
+.owl-next span {
+  opacity: 0;
+}
+
+.owl-prev:hover {
+  opacity: 0;
+}
+
+.owl-next:hover {
+  opacity: 0;
+}
+
+body {
+  font-family: source sans pro, Arial;
+}
+#wrapper {
+  display: inline-block;
+  /* position: absolute; */
+  padding: 0.3px;
+  opacity: 0.8;
+  color: #000;
+  border: 0px solid #cc3333;
+  background-color: grey;
+  transform: rotate(180deg);
+}
+#wrapper em.out {
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  display: block;
+  background: transparent;
+  border-left: 7px dashed transparent;
+  border-right: 7px dashed transparent;
+  border-bottom: 7px solid grey;
+  overflow: hidden;
+  transform: translate(-50%);
+}
+#wrapper em.inner {
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  display: block;
+  background: transparent;
+  border-left: 7px dashed transparent;
+  border-right: 7px dashed transparent;
+  border-bottom: 7px solid grey;
+  overflow: hidden;
+  transform: translate(-50%);
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: "";
+  border: 0;
+  background: white;
+}
+
+.btn-hov {
+  height: 45px;
+}
+.btn-hov:hover {
+  background: transparent;
+  color: white;
+}
+
+.btn-hov:focus {
+  box-shadow: none;
+}
+
+.btn-hov:active {
+  box-shadow: none;
+}
+.navbar-sp {
+  position: absolute;
+  top: 0px;
+
+  z-index: 100;
+  width: 100%;
+}
+
+.navbar-toggler:focus{
+  
+  box-shadow: none ;
+}
+
+
+/* .accordion-button:not(.collapsed)::after {
+background-image: url("arrow.jpeg");
+} */
+
+.accordion-button:not(.collapsed)::after {
+  background: #1f130b;
+  background-color: #1f130b !important;
+  color: black !important;
+  background-image: url("") !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #1f130b;
+  background-color: #1f130b !important;
+  color: black !important;
+  background-image: url("") !important;
+}
+
+.accordion-button::after {
+  background: #1f130b !important;
+  color: black !important;
+  background-color: #1f130b;
+  background-image: url("") !important;
+}
+.accordion-button:focus {
+  border: 0;
+  background-color: #1f130b;
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0);
+}
+.accordion-button {
+  padding-left: 0 !important;
+}
+
+.accordion-button {
+  border-bottom:0.5px gray solid !important;
+}
+.accordion-item:active {
+  border: 0;
+}
+
+/* .backrengi { 
+    background: url("carose2.jpeg");
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display:block;
+    color:white;
+    border:0;
+   
+    padding: 14px 17px 14px 17px;
+    
+}
+.backdivi{
+    background-color: white;
+    display: inline-block;
+    border-radius: 5px;
+} */
+
+.owl-carousel .owl-item img {
+  width: auto;
+}
+
+/* .imgg {
+  margin-right: 35px;
+} */
+
+
+#artiq2{
+  display: none;
+}
+
+.pad-sm{
+  width: 50%;
+}
+
+/* No greater than 900px, no less than 400px */
+@media (min-width: 1000px) and (max-width: 1200px) {
+  #artiq {
+    display: none;
+  }
+
+  #artiq2 {
+    display: block;
+    position: absolute;
+    bottom:70px;
+    left:100px;
+  }
+  .imgg{
+    margin-right:20px !important ;
+  }
+
+}
+
+#navbarToggleExternalContent>div{
+  overflow: scroll;
+}
+
+@media (max-width: 990px) {
+  .knlar2:nth-child(1){
+    display: none !important;
+  }
+  .imgg {
+    width: 200px !important;
+  }
+  .sticky{
+    position: absolute;
+    bottom:0;
+   
+    right: 0px !important;
+   
+    width:250px !important;
+  }
+
+  .sticky-w{
+   
+
+    width:300px !important;
+
+  }
+
+
+  .owl-dots {
+ 
+    text-align: right !important;
+  
+   
+  }
+
+#nbuttons button{
+    height: 40px;
+    display: inline-block;
+    word-wrap: none;;
+}
+
+#nbuttons h1 a{
+  font-size: 30px !important;
+}
+
+  #navvv .knlar{
+    font-size: 25px;
+  }
+  #navh .knlar{
+    font-size: 25px;
+  }
+
+  .item {
+    height: 500px;
+
+    /* background-image: url('carose2.jpeg');
+        background-repeat: no-repeat; */
+  }
+   .item button{
+       height: 40px;
+   }
+   .h1 {
+    padding: 10px 10px 10px 10px !important;
+    width: 120px !important;
+    height: 40px;
+  }
+
+  .pad-sm {
+
+    width: 300px;
+  }
+
+  .pad-sm h1 {
+    font-size: 16px !important ;
+    font-weight: 900 !important;
+  }
+
+  .pad-sm p {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+  }
+  #buttonlar > button {
+    width: 100%;
+    border: 0.5px solid gray;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    text-align: left;
+    padding-left: 0 !important;
+  }
+  #buttonlar {
+    padding-left: 0 !important;
+  }
+
+  .w_nu {
+    width: 100% !important;
+  }
+
+  .vizi {
+    visibility: hidden;
+  }
+}
+
+
+/* @media (max-width: 465px){} */
+ 
+
+@media (max-width: 500px){
+    .imgg {
+        position: absolute!important;
+        right:-60px;
+      }
+      .knlar2:nth-child(2){
+        visibility: hidden;
+      }
+    
+      .sticky-w{
+        position: absolute;
+        /* bottom:0; */
+       
+        left: 15 !important;
+       height: 250px;
+        width:300px !important;
+      }
+    
+      .pad-sm{
+        position: absolute!important;
+        left:15px;
+      }
+    
+    }
+    
+
+
+
+/* ------media------ */
+
+.select_nu {
+  border: 0.5px solid orange;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}
+
+.select_nu:focus {
+  box-shadow: 0 0 0 0;
+  border: 0.5px solid orange;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
+}

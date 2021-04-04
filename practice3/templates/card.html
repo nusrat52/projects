@@ -1,0 +1,30 @@
+
+
+
+        {% from "_formhelpers.html" import render_field %}
+            <form method="POST" action="" enctype="multipart/form-data">
+                {{ form.csrf_token }}
+
+                <div>
+                    {{ render_field(form.card_img )}}
+                </div>
+                <div>
+                    {{ render_field(form.card_name)}}
+                </div>
+                <div>
+                    {{ render_field(form.card_desc)}}
+                </div>
+                <div>
+                    {{ render_field(form.category)}}
+                </div>
+                <!-- <ul>
+                {% for field in form %}
+                    <li>
+                        {{ field.label }} {{ field }}
+                    </li>
+                {% endfor %}
+                </ul> -->
+                <input type="submit" value="Submit">
+            </form>
+
+

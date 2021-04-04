@@ -1,0 +1,143 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+
+<br><br><br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+
+   <form action="" method="POST" enctype="multipart/form-data">       
+<table>
+    <tr>
+        <td>
+    {{form.csrf_token}} 
+    {{form.basliq.label}}
+    </td>
+
+    <td>
+    {{form.basliq}}
+</td>
+</tr>
+<tr>
+    <td>
+    {{form.button1.label}}
+    </td>
+
+    <td>
+    {{form.button1}}
+</td>
+</tr>
+<tr>
+    <td>
+    {{form.button2.label}}
+
+    </td>
+    
+    <td>
+    {{form.button2}}
+</td>
+</tr>
+<tr><td>
+    {{form.description.label}}
+</td>
+<td>
+    {{form.description}}
+</td>
+</tr>
+<tr><td>
+    <span>main photo</span>
+</td>
+<td>
+    {{form.photo}}<br>
+</td>
+
+</tr>
+<tr>
+    <td>
+        <span>background picture</span>
+    </td>
+    
+    <td>
+    {{form.photo_b}} 
+</td>
+
+</tr>
+
+<tr>
+    
+    {{form.sel}}
+</tr>
+</table>
+
+<button type="submit">Submit</button>
+
+
+</form>
+
+{% if form.basliq.errors %}
+{% for i in  form.basliq.errors %}
+
+<p class="text-danger">{{i}}</p>
+{% endfor %}
+
+
+
+{% elif form.button1.errors %}
+
+{% for i in  form.button1.errors %}
+
+<p class="text-danger">{{i}}</p>
+{% endfor %}
+
+
+{% elif form.button2.errors %}
+
+{% for i in  form.button2.errors %}
+
+<p class="text-danger">{{i}}</p>
+{% endfor %}
+
+
+{% elif form.description.errors %}
+
+{% for i in  form.description.errors %}
+
+<p class="text-danger">{{i}}</p>
+{% endfor %}
+
+
+
+{% endif %}
+<!-- {{sl1}} -->
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br>
+{% endblock %}
+
